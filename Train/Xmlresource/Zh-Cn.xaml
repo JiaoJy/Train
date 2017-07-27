@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="ChEn">Ch/En</system:String>
+    <system:String x:Key="Subway">地铁购票系统</system:String>
+    <system:String x:Key="Allroute">总线</system:String>
+    <system:String x:Key="Yes">确定</system:String>
+    <system:String x:Key="Price">单价</system:String>
+    <system:String x:Key="UserName">用户名</system:String>
+</ResourceDictionary>

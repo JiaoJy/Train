@@ -1,0 +1,223 @@
+﻿<Page x:Class="Train.RouTine.OneRoutine"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+	Title="地铁一号路线" Height="420" Width="610">
+  
+    <Page.Effect>
+        <DropShadowEffect BlurRadius="20" ShadowDepth="0"/>
+    </Page.Effect>
+    <Canvas HorizontalAlignment="Left" Height="420" Margin="0" VerticalAlignment="Top" Width="610" >
+        <Canvas.Resources>
+            <Style TargetType="StackPanel">
+                <EventSetter Event="MouseDown" Handler="st1_MouseDown"></EventSetter>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="黑体"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+            <Style TargetType="Ellipse">
+                <Setter Property="Fill">
+                    <Setter.Value>
+                        <RadialGradientBrush>
+                            <GradientStop Color="AntiqueWhite" Offset="0.975" />
+                            <GradientStop Color="#799" Offset="0.475"/>
+                            <GradientStop Color="Azure" Offset="0.993" />
+                        </RadialGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Cursor" Value="Hand" />
+                <Setter Property="ForceCursor" Value="True" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Width" Value="39" />
+                        <Setter Property="Height" Value="39" />
+                        <Setter Property="Fill">
+                            <Setter.Value>
+                                <RadialGradientBrush>
+                                    <GradientStop Color="AntiqueWhite" Offset="0.975" />
+                                    <GradientStop Color="#3994" Offset="0.475" />
+                                    <GradientStop Color="Azure" Offset="0.993" />
+                                </RadialGradientBrush>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="Foreground" Value="Wheat"/>
+                <Setter Property="FontFamily" Value="黑体"/>
+            </Style>
+        </Canvas.Resources>
+        <Label Name="li" Canvas.Left="10" Height="99" Width="110" Canvas.Top="10">
+            <StackPanel Name="st1" Height="93" Width="100" >
+                <TextBlock x:Name ="TextBlock1" Text="市体育中心"/>
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="89" Canvas.Top="51" />
+        <Label  Name="l2"  Canvas.Left="134"  Height="99" Width="90" Canvas.Top="10">
+            <StackPanel Name="st2" Height="93" Width="69">
+                <TextBlock Name ="TextBlock2" Text="博学路"/>
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="197" Canvas.Top="51" />
+        <Label  Canvas.Left="229" Height="99" Width="103" Canvas.Top="10">
+            <StackPanel Name="st3"  Height="93" Width="89" >
+                <TextBlock Name ="TextBlock3" Text="郑州东站" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="307" Canvas.Top="51"  />
+        <Label  Canvas.Left="337" Height="99" Width="104" Canvas.Top="10">
+            <StackPanel Name="st4" Height="93" Width="90">
+                <TextBlock Name ="TextBlock4" Text="东风南路"/>
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="422" Canvas.Top="51" />
+        <Label  Canvas.Left="462" Height="99" Width="108" Canvas.Top="10">
+            <StackPanel Name="st5" Height="93" Width="90">
+                <TextBlock Name ="TextBlock5" Text="农业南路" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="505" Canvas.Top="106"  RenderTransformOrigin="0.5,0.5" >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="53.212"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label  Canvas.Left="511" Height="99" Width="99" Canvas.Top="137">
+            <StackPanel Name="st6" Height="93" Width="90">
+                <TextBlock Name ="TextBlock6" Text="黄河南路" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="《————" Canvas.Left="462" Canvas.Top="178" />
+        <Label  Canvas.Left="387" Height="99" Width="101" Canvas.Top="137">
+            <StackPanel Name="st7" Height="93" Width="91">
+                <TextBlock Name ="TextBlock7" Text="会展中心" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="《————" Canvas.Left="348" Canvas.Top="178"  />
+        <Label  Canvas.Left="272" Height="99" Width="110" Canvas.Top="137">
+            <StackPanel Name="st8" Height="93" Width="100">
+                <TextBlock x:Name ="TextBlock8" Text="民航路" HorizontalAlignment="Left" Width="70" Margin="20,0,0,0" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="《————" Canvas.Left="229" Canvas.Top="178"  Width="71" />
+        <Label  Canvas.Left="161" Height="99" Width="79" Canvas.Top="137">
+            <StackPanel Name="st9" Height="93" Width="69">
+                <TextBlock Name ="TextBlock9" Text=" 燕庄"/>
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="《————" Canvas.Left="116" Canvas.Top="178" Width="79" />
+        <Label  Canvas.Left="50" Height="99" Width="92" Canvas.Top="137">
+            <StackPanel Name="st10" Height="93" Width="79">
+                <TextBlock Name ="TextBlock10" Text="紫荆山" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="《————" Canvas.Left="36" Canvas.Top="240"  Width="71" RenderTransformOrigin="0.5,0.5" >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-75.648"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label  Canvas.Left="8" Height="99" Width="108" Canvas.Top="278">
+            <StackPanel Name="st11" Height="93" Width="98">
+                <TextBlock Name ="TextBlock11" Text=" 人民路" Margin="0,0,-19,0" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="83" Canvas.Top="322" />
+        <Label  Canvas.Left="116" Height="99" Width="108" Canvas.Top="278">
+            <StackPanel Name="st12" Height="93" Width="98">
+                <TextBlock Name ="TextBlock12" Text="二七广场"  Margin="0,0,-22,0"/>
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="197" Canvas.Top="322" Width="64" />
+        <Label  Canvas.Left="229" Height="99" Width="119" Canvas.Top="278">
+            <StackPanel Name="st13" Height="93" Width="119">
+                <TextBlock Name ="TextBlock13" Text="郑州火车站"  HorizontalAlignment="Left" Width="105"/>
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="318" Canvas.Top="322" />
+        <Label  Canvas.Left="369" Height="99" Width="93" Canvas.Top="278">
+            <StackPanel Name="st14" Height="93" Width="83">
+                <TextBlock Name ="TextBlock14" Text=" 医学院" />
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+        <Label Content="————>" Canvas.Left="441" Canvas.Top="322" />
+        <Label  Canvas.Left="467" Height="99" Width="108" Canvas.Top="278">
+            <StackPanel Name="st15" Height="93" Width="98" Margin="10,0,0,0">
+                <TextBlock Name ="TextBlock15" Text="绿城广场"/>
+                <Ellipse Width="45" Height="45" StrokeThickness="10"></Ellipse>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="7" Opacity="1" />
+                </StackPanel.Effect>
+            </StackPanel>
+        </Label>
+    </Canvas>
+</Page>

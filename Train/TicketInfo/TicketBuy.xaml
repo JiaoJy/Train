@@ -1,0 +1,38 @@
+﻿<Window x:Class="Train.TicketInfo.TicketBuy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TicketBuy" Height="550" Width="550">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Xmlresource/Language.xaml" />
+                <ResourceDictionary Source="/Xmlresource/Zh-Cn.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.ColumnSpan="2" Padding="0">
+            <Image Source="/image/22.jpg" Stretch="Fill"/>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="0"/>
+                <!--<DropShadowEffect Color="Black" Direction="0" ShadowDepth="3" Opacity="5" />-->
+            </Border.Effect>
+        </Border>
+        <Border Grid.ColumnSpan="2" >
+            <Frame x:Name="fr" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" NavigationUIVisibility  ="Hidden" Margin="0,0,0,52" />            
+        </Border>       
+        <Button x:Name="yes" Content="{DynamicResource Yes}" Width="60" Height="26"  Margin="0,473,90,0" Click="Button_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Button x:Name="buy" Content="支付" Width="60" Height="26" Visibility="Hidden"  Margin="0,473,90,0" Click="Button_Click" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <Button x:Name="cancel" Content="取消" Width="60" Height="26" Margin="0,473,135,0" Click="Button_Click" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Label x:Name="uname" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="45,31,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="upassw" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="45,39,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ubla" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="45,47,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="pprice" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="45,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="pnum" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="45,81,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uid" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="45,81,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<Window x:Class="Train.User.UserGoing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="管理用户"  Height="528.259" Width="900.331">
+    <Window.Background>
+        <ImageBrush ImageSource="/image/6.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="687*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Height" Value="46" />
+                <Setter Property="Width" Value="115" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border  CornerRadius="33" Background="White" Opacity="0.8">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border BorderBrush="White" BorderThickness="10" CornerRadius="50" Background="LightSkyBlue" Opacity="0.7">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+        <Button  FontFamily="黑体" FontSize="20" Content="用户注册" HorizontalAlignment="Left" VerticalAlignment="Top" Width="167" Click="Button_Click" Height="71" Margin="10,10,0,0"/>
+        <Button  FontFamily="黑体" FontSize="20" Content="用户充值" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="167" Click="Button_Click_1" Height="71"/>
+        <Button  FontFamily="黑体" FontSize="20" Content="用户销户" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="167"  Height="71" Click="Button_Click_2"/>
+        <Button  FontFamily="黑体" FontSize="20" Content="返回首页" HorizontalAlignment="Left" Margin="10,364,0,0" VerticalAlignment="Top" Width="167" Height="71" Click="Button_Click_3"/>
+        <Frame Name="f1"  NavigationUIVisibility  ="Hidden"   Content="" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="687" Height="498"/>
+    </Grid>
+</Window>
